@@ -27,7 +27,7 @@
             justify-content: start;
             min-height: 90vh;
             padding: 1rem;
-            background: url('https://res.cloudinary.com/dtzkdxggh/image/upload/v1738968735/client/landing%2Fadrenalina%2Fbg1.webp?alt=media') right bottom / cover no-repeat;
+            background: url('https://static.vecteezy.com/system/resources/previews/008/557/061/non_2x/online-casino-banner-with-smartphone-casino-slot-machine-roulette-playing-cards-poker-chips-and-casino-wheel-fortune-on-gold-background-with-bokeh-3d-realistic-illustration-vector.jpg') right bottom / cover no-repeat;
             background-color: rgba(0, 0, 0, 0.5);
             background-blend-mode: overlay;
         }
@@ -55,7 +55,27 @@
             text-decoration: none;
             font-size: 17px;
         }
-        .section-sorteos-bonos {
+        .section-sorteos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            min-height: 100vh;
+            background-color: #000;
+        }
+        .section-sorteos h3 {
+            color: #FBC72D;
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .section-sorteos img {
+            width: 90%;
+            max-width: 400px;
+            border-radius: 0.375rem;
+            margin: 0.5rem 0;
+        }
+        .section-bonos {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -65,24 +85,11 @@
             background-color: rgba(0, 0, 0, 0.55);
             background-blend-mode: overlay;
         }
-        .section-sorteos-bonos h3 {
+        .section-bonos h3 {
             color: #FBC72D;
-            font-size: 28px;
+            font-size: 27px;
             font-weight: bold;
             text-align: center;
-            margin-bottom: 1rem;
-        }
-        .section-sorteos-bonos img {
-            width: 90%;
-            max-width: 400px;
-            border-radius: 0.375rem;
-            margin: 0.5rem 0;
-        }
-        .bonus-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 2rem;
         }
         .bonus-item {
             text-align: center;
@@ -94,6 +101,21 @@
         .bonus-item h4 {
             font-size: 25px;
             font-weight: bold;
+        }
+        .section-cta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 1rem;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .section-cta h2 {
+            color: #FBC72D;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
         }
         footer {
             background-color: #fff;
@@ -107,27 +129,38 @@
             .section-hero h1 { font-size: 25px; }
             .section-hero p { font-size: 20px; }
             .btn-primary { font-size: 25px; }
-            .section-sorteos-bonos { padding: 2.5rem; }
-            .section-sorteos-bonos h3 { font-size: 40px; }
-            .bonus-container { flex-direction: row; justify-content: center; }
+            .section-sorteos { padding: 2.5rem; flex-direction: row; }
+            .section-sorteos h3 { font-size: 40px; }
+            .section-bonos { padding: 2.5rem; }
+            .section-bonos h3 { font-size: 40px; }
             .bonus-item { display: inline-block; width: 33%; }
+            .section-cta { padding: 2.5rem; }
+            .section-cta h2 { font-size: 60px; }
         }
     </style>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
     <section class="section-hero">
-        <img src="https://res.cloudinary.com/dtzkdxggh/image/upload/v1738968735/client/logo.webp?alt=media" alt="Golden Fox">
+        <img src="https://i.postimg.cc/pdvkPwpq/photo-2024-11-29-07-38-50-removebg-preview.png" alt="Golden Fox">
         <h1>¡Sentí la adrenalina, ganá sin límites!</h1>
         <p class="block md:hidden">Atención 24h <br> Sin límite de retiro <br> Mínimo de carga $700 de retiro $3000</p>
         <p class="hidden md:block">Atención 24h - Sin límite de retiro - Mínimo de carga: $700 - Mínimo de retiro: $3000</p>
         <a href="/signup?promoCode=FOX10" class="btn-primary">BONO DEL 50% EN TU PRIMER CARGA</a>
     </section>
 
-    <section class="section-sorteos-bonos">
+    <section class="section-sorteos">
+        <div>
+            <h3>¡Participá en sorteos por premios increíbles!</h3>
+        </div>
+        <div>
+            <img src="https://res.cloudinary.com/dtzkdxggh/image/upload/v1738968735/client/landing%2Fadrenalina%2F3.jpg?alt=media" alt="Moto">
+        </div>
+    </section>
+
+    <section class="section-bonos">
         <h3>Bonos y promociones exclusivas</h3>
-        <img src="https://res.cloudinary.com/dtzkdxggh/image/upload/v1738968735/client/landing%2Fadrenalina%2F3.jpg?alt=media" alt="Moto">
-        <div class="bonus-container">
+        <div>
             <div class="bonus-item">
                 <i class="bx bx-gift" style="color: #ff7d66;"></i>
                 <h4 style="color: #ff401f;">Bonos de bienvenida</h4>
@@ -144,6 +177,12 @@
                 <p>Acumulá puntos y ganá premios increíbles</p>
             </div>
         </div>
+    </section>
+
+    <section class="section-cta">
+        <h2>El juego ya empieza… ¿estás listo para ganar?</h2>
+        <p>El zorro de la suerte te espera.</p>
+        <a href="/signup?promoCode=FOX10" class="btn-primary">BONO DEL 50% EN TU PRIMER CARGA</a>
     </section>
 
     <footer>
